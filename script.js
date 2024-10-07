@@ -7,10 +7,6 @@ function btnPressed() {
   Number++;
   Counter.textContent = Number;
 }
-function btnPressed() {
-  Number++;
-  Counter.textContent = Number;
-}
 
 Button.addEventListener("mousedown", () => {
   interval = setInterval(() => {
