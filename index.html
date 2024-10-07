@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Button Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="DogPainting.png" alt="" />
+      <p class="instruction">
+        This project is inside a small container, you can click to add to the
+        counter or hold down the button to speed up the counter.
+      </p>
+      <h2 id="h22">Select your color <span id="colorOutput"></span></h2>
+      <div class="sliders">
+        <label for="">red:</label>
+        <input
+          type="range"
+          id="rangeRed"
+          value="0"
+          min="0"
+          max="255"
+          title="Red"
+        />
+        <label for="">green:</label>
+        <input
+          type="range"
+          id="rangeGreen"
+          value="0"
+          min="0"
+          max="255"
+          title="Green"
+        />
+        <br />
+        <label for="">blue:</label>
+        <input
+          type="range"
+          id="rangeBlue"
+          value="0"
+          min="0"
+          max="255"
+          title="Blue"
+        />
+      </div>
+      <br />
+      <button class="large red button" onclick="btnPressed()" type="button">
+        Button
+      </button>
+      <p>Clicks: <a id="clicks">0</a></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
